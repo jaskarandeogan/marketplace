@@ -3,6 +3,8 @@ import Image from 'next/image'
 import SearchBar from '../SearchBar'
 import Wallet from "@/app/components/Wallet"
 import { FaRegUserCircle } from "react-icons/fa";
+import { RiHomeSmile2Fill } from "react-icons/ri";
+import Link from 'next/link'
 
 
 const Header = ({
@@ -26,7 +28,7 @@ const Header = ({
 
     return (
         <header className='h-[64px] bg-lighter-background flex justify-between items-center'>
-            <div className='min-w-96'>
+            <div className='min-w-96 flex items-center'>
                 <Image
                     src="/market-place-logo.svg"
                     alt="Logo"
@@ -34,6 +36,11 @@ const Header = ({
                     height={100}
                     className='my-4 mx-5'
                 />
+                 <span className='h-8 border-r border-2 border-border mx-5'></span>
+                 <Link href='/' className='h-16 text-white flex gap-2 font-semibold items-center border-b-2 border-b-primary'>
+                    <RiHomeSmile2Fill className='h-6 w-6 text-white hover:text-text-color transition-all' />
+                    Market
+                </Link>
             </div>
             <div className='min-w-96'>
                 <SearchBar />
