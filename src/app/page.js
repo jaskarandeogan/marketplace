@@ -1,3 +1,5 @@
+import FilterPanel from '@/app/components/FilterPanel';
+
 export default function Home() {
 
   const DashboardLayout = ({
@@ -30,7 +32,7 @@ export default function Home() {
   return (
     <main className="bg-background flex h-screen-64 flex-col items-center justify-between">
       <DashboardLayout
-        FilterPanel={() => <div> Filter Panel</div>}
+        FilterPanel={() => <FilterPanel />}
         Content={() => <div> Content Panel</div>}
         Sidebar={() => <div> Side Panel</div>}
       />
