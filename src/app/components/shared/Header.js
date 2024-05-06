@@ -52,7 +52,7 @@ const Header = ({ handleProfileClick }) => {
                 <nav className='flex gap-4'>
                     {menus.map((menu, index) => (
                         <Link key={index} href={menu.link}>
-                            <li className={`group h-16 text-white flex gap-2 font-semibold items-center border-b-2 border-b-primary ${activeMenu === menu.name ? 'border-b-2 border-b-primary' : 'border-b-transparent'} hover:text-text-color transition-all`}>
+                            <li className={`group h-16 text-white flex gap-2 font-semibold items-center border-b-2 border-b-primary ${activeMenu === menu.name ? 'border-b-2 border-b-primary' : 'border-b-transparent'} hover:text-text-color transition-all focus:outline-none`}>
                                 <menu.Icon
                                     className={`h-8 w-8 ${activeMenu === menu.name ? 'text-text-color' : 'text-white'} transition-all`}
                                 />
