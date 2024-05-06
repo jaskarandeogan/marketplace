@@ -6,9 +6,9 @@ import classNames from "classnames";
 export default function Dropdowns({ children, Icon, text, image, className, translate="md:translate-x-0" }) {
   return (
     <Menu as="div" className="relative inline-block text-left">
-      <div>
-        <Menu.Button className={classNames("inline-flex w-full justify-center  items-center rounded-md text-sm font-medium text-white focus:outline-none", className)}>
-        {Icon&&<Icon className="h-8 w-8" aria-hidden="true"  /> }
+      <div className="flex items-center">
+        <Menu.Button className={classNames("inline-flex w-full justify-center items-center rounded-md text-sm font-medium text-white focus:outline-none", className)}>
+        {Icon&&<Icon className="h-9 w-9" aria-hidden="true"  /> }
         {text&&<span>{text}</span>}
         {image&&<Image src={image.src} alt={image.alt} width={image.width} height={image.height} className={image.className}/>}
         </Menu.Button>

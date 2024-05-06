@@ -10,7 +10,7 @@ const Homepage = () => {
   }
 
   const earnings = {
-    description: "0.83",
+    description: "546.83",
   }
 
   const tutorialDescription ={
@@ -30,7 +30,7 @@ const Homepage = () => {
       <div className='w-full relative my-5'>
         <Image src='/hero.png' alt='hero' width={1920} height={1080} className=' w-full lg:w-[80%] h-auto m-auto' />
         <div className='absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-gradient py-32 px-24'>
-          <h1 className='text-4xl xl:text-6xl font-semibold text-white text-center xl:leading-[70px]'>Spread The Word <br />Win Rewards</h1>
+          <h1 className='text-4xl xl:text-6xl font-semibold text-white text-center xl:leading-[70px] blur-none'>Spread The Word <br />Win Rewards</h1>
           <p className='text-lg text-text-color text-center m-2'>Invite your friends and earn a portion of what they spend.</p>
         </div>
       </div>
