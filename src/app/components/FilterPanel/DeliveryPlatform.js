@@ -7,9 +7,9 @@ const DeliveryPlatforms = ({
     selectedDeliveryPlatform = {}
 }) => {
     return (
-        <div className='flex flex-col my-5'>
+        <div className='flex flex-col'>
             <h2 className='text-sm font-semibold text-white'>Delivery Platform</h2>
-            <div className='grid grid-flow-row grid-cols-2 gap-2 mt-4'>
+            <div className='grid grid-flow-row grid-cols-2 gap-2 mt-4 transition-all'>
                 {
                     deliveryPlatform?.map((platform, index) => (
                         <button key={index} className={classNames('rounded-md font-medium bg-grey flex gap-2 py-2 justify-center items-center hover:brightness-110 transition-all text-text-color w-full',
