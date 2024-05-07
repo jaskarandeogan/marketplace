@@ -18,8 +18,8 @@ const Homepage = () => {
     description: () =>{
       return (
         <div className='flex flex-col gap-4'>
-          <p className='text-white text-md'>For each new user you bring to BloxBoom you will earn 10% from any of their purchases. After clicking ‘Claim Earnings’ it will be applied to your personal wallet that can be applied to any of your future purchases.</p>
-          <p className='text-white text-md'>Simply share your Referral link with friends, communities, videos, and more to earn BloxBoom balance for free!</p>
+          <p className='text-white text-md'>For each new user you bring to Caustic you will earn 10% from any of their purchases. After clicking ‘Claim Earnings’ it will be applied to your personal wallet that can be applied to any of your future purchases.</p>
+          <p className='text-white text-md'>Simply share your Referral link with friends, communities, videos, and more to earn Caustic balance for free!</p>
         </div>
       )
     }
@@ -44,7 +44,7 @@ const Homepage = () => {
             <li className='flex justify-between items-center'>
               <h2 className='text-white text-xl'>Your Referral Link</h2>
               <div className='flex gap-8 items-center'>
-                <p className=' text-text-color'>bloxboom.com/ref/<span className='text-white'>{promos.refferalAddress}</span></p>
+                <p className=' text-text-color'>caustic.com/ref/<span className='text-white'>{promos.refferalAddress}</span></p>
                 <button className='text-primary cursor-pointer hover:brightness-125'>Edit</button>
               </div>
             </li>
