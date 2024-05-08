@@ -12,7 +12,7 @@ const DashboardLayout = ({
           <FilterPanel />
         </div>
         <div className="flex-1 flex flex-col mt-[2px]">
-          <div className="w-full h-16 bg-grey-100">
+          <div className="w-full h-16 bg-light-background">
             <SubHeader />
           </div>
           <div className="flex flex-1">

@@ -57,5 +57,11 @@ body {
   .rotate-360 {
     animation: rotate 0.7s linear;
   }
+
+  .clip-sqaure {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+  }
 }
+
+
 

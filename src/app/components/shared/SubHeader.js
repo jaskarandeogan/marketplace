@@ -82,7 +82,7 @@ const SubHeader = () => {
             <div className='flex items-center px-3 py-2'>
                 <ul className='flex gap-2 items-center'>
                     {dealsData.map((deal, index) => (
-                        <li key={index} className={`font-semibold cursor-pointer text-text-color hover:text-white transition-all flex items-center gap-2 py-[6px] px-2 ${deal.name == selectedCategory.name && 'text-white'}`} onClick={
+                        <li key={index} className={`font-semibold cursor-pointer text-text-color hover:text-white transition-all flex items-center gap-2 py-[6px] px-3 rounded-md ${deal.name == selectedCategory.name && 'text-white bg-grey'}`} onClick={
                             () => handleSelectedOption(deal)
                         }>
 
@@ -94,7 +94,7 @@ const SubHeader = () => {
                 <span className='h-8 border-r border-2 border-border mx-5'></span>
                 <ul className='flex gap-2 items-center'>
                     {ItemCategory.map((category, index) => (
-                        <li key={index} className={`py-[6px] px-2 font-semibold cursor-pointer text-text-color hover:text-white transition-all ${category.name == selectedCategory.name && 'text-white'}`} onClick={() => handleSelectedOption(category)
+                        <li key={index} className={`py-[6px] px-3 rounded-md font-semibold cursor-pointer text-text-color hover:text-white transition-all ${category.name == selectedCategory.name && 'text-white bg-grey'}`} onClick={() => handleSelectedOption(category)
                         }>{category.name}</li>
                     ))}
                 </ul>
