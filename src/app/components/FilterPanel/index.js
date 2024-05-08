@@ -1,12 +1,14 @@
 "use client"
 
 import { useState } from 'react'
-import DisclosurePanel from '../shared/DisclosurePanel'
+import DisclosurePane from '../shared/DisclosurePanel'
 import { TbReload } from "react-icons/tb";
 import { FaWindows, FaPlaystation, FaXbox } from "react-icons/fa6";
 import { SiNintendoswitch } from "react-icons/si";
 import DeliveryPlatform from '@/app/components/FilterPanel/DeliveryPlatform';
 import RarityPanel from '@/app/components/FilterPanel/Rarity';
+import Paints from '@/app/components/FilterPanel/Paints';
+import ItemType from '@/app/components/FilterPanel/ItemType';
 
 const FilterPanel = () => {
     const [animationKey, setAnimationKey] = useState(0);
@@ -59,15 +61,19 @@ const FilterPanel = () => {
                     <TbReload className='h-6 w-6 text-white' />
                 </button>
             </div>
-            <hr className='my-2 border-[1.5px] border-border' />
-            <DisclosurePanel 
+            <DisclosurePane
+                ButtonContent="Paints"
+                PanelContent={Paints}
+            />
+            <DisclosurePane
                 ButtonContent="Rarity"
                 PanelContent={RarityPanel}
             />
-            <hr className='my-2 border-[1.5px] border-border' />
-            <DisclosurePanel />
-            <hr className='my-2 border-[1.5px] border-border' />
-            <DisclosurePanel />
+            
+            <DisclosurePane 
+                ButtonContent="Item Type" 
+                PanelContent={ItemType}
+            />
         </div>
     )
 }

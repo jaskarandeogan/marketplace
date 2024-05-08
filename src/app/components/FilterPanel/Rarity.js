@@ -62,8 +62,8 @@ const RarityPanel = () => {
                     <Field
                         as={Checkbox}
                         name={item.value}
-                        className={classNames("h-5 w-5 border-2  rounded-sm focus:ring-0 focus:outline-none cursor-pointer transition-all",
-                            selectedRarity.includes(item.value) ? "bg-primary border-primary" : "bg-dark-background border-text-color"
+                        className={classNames("h-5 w-5 border-2  rounded-sm focus:ring-0 focus:outline-none cursor-pointer transition-all border-border",
+                            selectedRarity.includes(item.value) ? "bg-primary" : "bg-dark-background "
                         )}
                         checked={selectedRarity.includes(item.value)}
                         onChange={() => handleSelectRarity(item.value)}
