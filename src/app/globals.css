@@ -61,7 +61,16 @@ body {
   .clip-sqaure {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
   }
+
+  .label-bg-gradient {
+    background: linear-gradient(to right, rgba(32, 206, 112, 0.05) 0%, rgba(32, 206, 112, 0) 100%);
+  }
+  
 }
+
+
+
+
 
 
 

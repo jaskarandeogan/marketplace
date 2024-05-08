@@ -49,8 +49,8 @@ const Paints = () => {
                 {
                     colors.map((color, index) => (
                         <div key={index} className={'flex flex-col gap-2 relative w-fit'}>
-                            <div className={classNames('group-paint hover:scale-110 cursor-pointer transition-all h-6 w-6 rounded-lg clip-sqaure z-10', color.name == "default" && "border-2 border-border")} style={{ background: color.primary }}></div>
-                            <div className={classNames('group-paint hover:scale-110 cursor-pointer transition-all h-6 w-6 rounded-lg absolute left-0', color.name == "default" && "border-2 border-border")} style={{ background: color.secondary }}></div>
+                            <span className={classNames('group-paint hover:scale-110 cursor-pointer transition-all h-6 w-6 rounded-lg clip-sqaure z-10', color.name == "default" && "border-2 border-border")} style={{ background: color.primary }}></span>
+                            <span className={classNames('group-paint hover:scale-110 cursor-pointer transition-all h-6 w-6 rounded-lg absolute left-0', color.name == "default" && "border-2 border-border")} style={{ background: color.secondary }}></span>
                         </div>
                     ))
                 }
